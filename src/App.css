@@ -1,0 +1,103 @@
+.App {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #F1EDEA;
+    min-height: 100vh;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.menu-categories {
+    width: 20%;
+    background-color: white;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    overflow-y: auto;
+    margin-right: 2%;
+    border-radius: 10px;
+}
+
+
+.menu-item:last-child {
+    margin-bottom: 0;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: start;
+}
+
+.menu-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    height: 290px;
+}
+
+
+    .menu-item h2 {
+        font-size: 18px;
+        margin: 0;
+    }
+
+.item-price {
+    font-weight: bold;
+}
+
+
+.menu-category {
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+    .menu-category.active {
+        background-color: #f0f0f0;
+    }
+
+.item-image {
+    max-width: 85%;
+    height: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #312122;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+    max-width: 200px;
+    margin-right: 40px;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
